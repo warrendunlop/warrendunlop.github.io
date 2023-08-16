@@ -37,19 +37,19 @@
 
 /* hero banners */
 .hero h1 {
-    font-size: 5rem;
-    font-weight:300;
+    font-size: 2.2rem;
+    font-weight: 300;
 }
 .hero h4 {
-    font-size: 1rem;
-    font-weight:200;
-    letter-spacing: .3rem;
+    font-size: .8rem;
+    font-weight: 200;
+    letter-spacing: .2rem;
 }
 .hero .btn{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 300;
-    letter-spacing: .05rem;
-    padding: 1rem 3rem;
+    letter-spacing: .04rem;
+    padding: .75rem 2rem;
 }
 
 .bg-grunge { 
@@ -77,6 +77,10 @@
 
 #ngmhl-rosters .tab-pane img {
     border-radius: 15px;
+}
+
+#ngmhl-rosters .nav-item {
+    font-size: .8rem;
 }
 
 /* nav anchors */
@@ -111,3 +115,53 @@
     opacity: .05;
     mix-blend-mode: luminosity;
 }
+
+/* breakpoints */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+    .hero h4 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .hero h1 {
+        font-size: 4rem;
+    }
+    .hero h4 {
+        font-size: 1.5rem;
+        letter-spacing: .3rem;
+    }
+    .hero .btn{
+        font-size: 1.5rem;
+        letter-spacing: .05rem;
+        padding: 1rem 3rem;
+    }
+    #ngmhl-rosters .nav-item {
+        font-size: 1rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .hero h1 {
+        font-size: 4.5rem;
+    }
+    .hero h4 {
+        font-size: 2rem;
+        letter-spacing: .3rem;
+    }
+    #ngmhl-rosters .nav-item {
+        font-size: 1.2rem;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { }
