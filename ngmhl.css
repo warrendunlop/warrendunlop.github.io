@@ -1,4 +1,113 @@
-/* .nav { 
-    background-image: url(images/grungebg.jpeg);
+/* type */
+.oswald {
+    font-family: 'Oswald', sans-serif;
+}
+*, .lato {
+    font-family: 'Lato', sans-serif;
+}
+
+/* color */
+.orange {
+    color: #E8A04E;
+}
+.orange.btn {
+    border-color: #E8A04E;
+}
+.orange.btn:hover {
+    background-color: #E8A04E;
+}
+.whalers {
+    color: #316539 !important; /* moss green */
+}
+.flyers {
+    color: #E26D41 !important; /* bright orange */
+}
+.sens {
+    color: #BC964B !important; /*  mid gold */
+}
+.leafs {
+    color: #081F57 !important; /* navy blue */
+}
+.bruins {
+    color: #F4BB47 !important; /* bright yellow */
+}
+.canadiens {
+    color: #A12E32 !important; /* deep red */
+}
+
+/* hero banners */
+.hero h1 {
+    font-size: 5rem;
+    font-weight:300;
+}
+.hero h4 {
+    font-size: 1rem;
+    font-weight:200;
+    letter-spacing: .3rem;
+}
+.hero .btn{
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    padding: 1rem 3rem;
+}
+
+.bg-grunge { 
+    background-image: url(images/grungebg-grey.jpg);
     background-position: center;
-} */
+}
+
+/* curator overrides */
+.crt-stagger .crt-feed .crt-stagger-post .crt-stagger-post-content .crt-stagger-post-body-container .crt-stagger-post-text-footer .crt-post-username a {
+    text-decoration: none;
+    font-family: 'Lato', sans-serif !important;
+}
+
+#ngmhl-schedule iframe {
+    box-shadow: 0 0 50px rgba(0,0,0,.1);
+    border-radius: 15px;
+    margin-top: -50px;
+}
+
+/* main sections */
+#ngmhl-arena iframe {
+    border-radius: 15px;
+    border: 1px solid #ddd !important;
+}
+
+#ngmhl-rosters .tab-pane img {
+    border-radius: 15px;
+}
+
+/* nav anchors */
+.anchor {
+    display: block;
+    position: relative;
+    top: -150px;
+    visibility: hidden;
+}
+#ngmhl-schedule .anchor {
+    top: -150px;
+}
+
+#ngmhl-updates .anchor {
+    top: -100px;
+}
+
+#ngmhl-about .anchor {
+    top: -150px;
+}
+
+#ngmhl-rosters .anchor {
+    top: -100px;
+}
+
+#ngmhl-arena .anchor {
+    top: -150px;
+}
+
+/* footer */
+.watermark {
+    opacity: .05;
+    mix-blend-mode: luminosity;
+}

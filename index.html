@@ -7,65 +7,75 @@
         <meta name="description" content="North Gloucester Mens Hockey League - playing in Potvin Arena in the Richcraft Sensplex since 1971.">
         <meta name="keywords" content="Hockey, Ottawa, North Gloucester">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Oswald" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
         <link href="ngmhl.css" rel="stylesheet"/>
+        <script src="countdown.js"></script>
         <script src="https://kit.fontawesome.com/e525574102.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-            var calendarEl = document.getElementById('calendar');
-
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-                // plugins: [ googleCalendarPlugin ],
-
-                // headerToolbar: {
-                // left: 'prev,next today',
-                // center: 'title',
-                // right: 'dayGridMonth,listYear'
-                // },
-
-                // displayEventTime: false, // don't show the time column in list view
-                googleCalendarApiKey: 'AIzaSyDulxRyUiXXbeBxCjE1zbjSo6hRcUmbmtk',
-                events: 'f75bf25e430394c7376635720bd78c21e91eb167258efdaff7a1455bdada9e00@group.calendar.google.com',
-
-                eventClick: function(arg) {
-
-                // opens events in a popup window
-                window.open(arg.event.url, '_blank', 'width=700,height=600');
-
-                // prevents current tab from navigating
-                arg.jsEvent.preventDefault();
-                }
-
-            });
-
-            calendar.render();
-            });
-        </script>  
+        <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
     </head>
 
     <body class="bg-body-tertiary">
-
-        <ul class="nav justify-content-center bg-dark py-1">
+        <!-- nav -->
+        <ul class="nav fixed-top justify-content-center py-1 bg-black">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"><img src="images/ngmhl tri color.png" width="50" alt="NGMHL"></a>
+                <a class="nav-link active" aria-current="page" href="#"><img src="images/ngmhl tri color.png" width="40" alt="NGMHL"></a>
+            </li>
+            <li class="nav-item pt-2">
+                <a class="nav-link text-white" aria-current="page" href="#ngmhl-schedule-anchor">Schedule</a>
+            </li>
+            <li class="nav-item pt-2">
+                <a class="nav-link text-white" aria-current="page" href="#ngmhl-updates-anchor">Updates</a>
+            </li>
+            <li class="nav-item pt-2">
+                <a class="nav-link text-white" aria-current="page" href="#ngmhl-about-anchor">About</a>
+            </li>
+            <li class="nav-item pt-2">
+                <a class="nav-link text-white" aria-current="page" href="#ngmhl-rosters-anchor">Rosters</a>
+            </li>
+            <li class="nav-item pt-2">
+                <a class="nav-link text-white" aria-current="page" href="#ngmhl-arena-anchor">Arena</a>
+            </li>
+            <li class="nav-item pt-2 px-4">
+                <a class="btn orange btn-outline-light rounded-pill" aria-current="page" href="#">Register now</a>
             </li>
         </ul>
 
-        <div class="container-fluid py-5">
-            <div class="row justify-content-center pt-5">
-                <div class="col-8">
-                    <div id="calendar"></div>
+        <!-- hero -->
+        <div class="container-fluid py-5 bg-dark bg-grunge hero">
+            <div class="row justify-content-center py-5">
+                <div class="col-12 text-center pt-5 pb-3">
+                    <h1 class="oswald orange text-uppercase">Who will score in '24?</h1>
+                    <h4 class="oswald text-light text-uppercase pt-2 pb-4">
+                        NEW SEASON STARTS IN
+                        <span class="oswald" id="days"></span>D
+                        <span class="oswald" id="hours"></span>H
+                        <span class="oswald" id="minutes"></span>M
+                        <span class="oswald" id="seconds"></span>S
+                    </h4>
+                    <a class="btn btn-lg btn-outline-warning rounded-pill oswald text-uppercase orange" role="button" href="#">Register now</a>
                 </div>
+            </div>
+        </div>
 
+        <div class="container-fluid">
+            <!-- schedule / calendar -->
+            <div id="ngmhl-schedule" class="row pb-5 mt-n1 justify-content-center">
+                <a class="anchor" id="ngmhl-schedule-anchor"></a>
+                <div class="col-12 col-xs-12 col-md-12 col-lg-10">
+                    <iframe src="https://embed.styledcalendar.com/#LaIblDe3Sp2obPi5CecJ" title="Styled Calendar" class="styled-calendar-container" style="width: 100%; border: none;" data-cy="calendar-embed-iframe"></iframe>
+                </div>
             </div>
 
-            <div class="row py-5 justify-content-center">
-                <div class="col col-xs-12 col-sm-12 col-md-4">
+            <!-- updates / social media -->
+            <div id="ngmhl-updates" class="row py-5 justify-content-center">
+                <a class="anchor" id="ngmhl-updates-anchor"></a>
+                <div class="col-12 col-xs-5 col-md-5 col-lg-4">
                     <a class="twitter-timeline" href="https://twitter.com/NGMHL?ref_src=twsrc%5Etfw">Tweets from NGMHL</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>
-                <div class="col">
+                <div class="col col-lg-6">
                     <div class="d-xs-block d-sm-block d-md-none">
                         <div class="d-flex pt-5">
                             <div class="p-2 flex-grow-1"><h4><i class="fa-brands fa-instagram"></i> NGMHL71</h4></div>
@@ -73,6 +83,118 @@
                         </div>
                     </div>
                     <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+                </div>
+            </div>
+
+            <!-- about -->
+            <div id="ngmhl-about" class="row py-5 justify-content-center">
+                <a class="anchor" id="ngmhl-about-anchor"></a>
+                <div class="col py-3 text-center">
+                    <p><i class="fa-solid fa-meteor fs-1"></i></p>
+                    <p>
+                        <span class="fs-5 oswald text-uppercase">Play nearly 50 games</span><br/>
+                        <span class="text-secondary">Five games every two weeks</span>
+                    </p>
+                </div>
+                <div class="col py-3 text-center">
+                    <p><i class="fa-solid fa-calendar-days fs-1"></i></p>
+                    <p>
+                        <span class="fs-5 oswald text-uppercase">Same rink, nights, and times</span><br/>
+                        <span class="text-secondary">Tue 9/10, Thurs 10/11, Sun 9/10 @ Potvin</span>
+                    </p>
+                </div>
+                <div class="col py-3 text-center">
+                    <p><i class="fa-solid fa-handshake-simple fs-1"></i></p>
+                    <p>
+                        <span class="fs-5 oswald text-uppercase">Good vibes only</span><br/>
+                        <span class="text-secondary">High retention + draft = no dickheads</span>
+                    </p>
+                </div>
+            </div>
+            <div class="row py-5 justify-content-center">
+                <div class="col py-3 text-center">
+                    <p><i class="fa-solid fa-scale-balanced fs-1"></i></p>
+                    <p>
+                        <span class="fs-5 oswald text-uppercase">Even playing field</span><br/>
+                        <span class="text-secondary">Every year we divide 6 fair teams</span>
+                    </p>
+                </div>
+                <div class="col py-3 text-center">
+                    <p><i class="fa-solid fa-beer-mug-empty fs-1"></i></p>
+                    <p>
+                        <span class="fs-5 oswald text-uppercase">Best league culture in Ottawa</span><br/>
+                        <span class="text-secondary">Re-shuffling means you'll know everyone</span>
+                    </p>
+                </div>
+                <div class="col py-3 text-center">
+                    <p><i class="fa-solid fa-shirt fs-1"></i></p>
+                    <p>
+                        <span class="fs-5 oswald text-uppercase">Nice threads, of course</span><br/>
+                        <span class="text-secondary">High quality jerseys and socks provided</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- roster -->
+            <div id="ngmhl-rosters" class="row py-5 justify-content-center">
+                <a class="anchor" id="ngmhl-rosters-anchor"></a>
+                <div class="col-8">
+                    <ul class="nav nav-underline mb-3 justify-content-center" id="nav-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link whalers active" data-bs-toggle="tab" data-bs-target="#roster-whalers" aria-selected="true" href="#">Whalers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link flyers" data-bs-toggle="tab" data-bs-target="#roster-flyers" aria-selected="false" href="#">Flyers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sens" data-bs-toggle="tab" data-bs-target="#roster-sens" aria-selected="false" href="#">Sens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link leafs" data-bs-toggle="tab" data-bs-target="#roster-leafs" aria-selected="true" href="#">Leafs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bruins" data-bs-toggle="tab" data-bs-target="#roster-bruins" aria-selected="false" href="#">Bruins</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link canadiens" data-bs-toggle="tab" data-bs-target="#roster-canadiens" aria-selected="false" href="#">Canadiens</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade active show" id="roster-whalers" aria-labelledby="roster-whalers-tab">
+                            <img src="images/rosters/2023/Whalers.png" width="100%" />
+                        </div>
+                        <div class="tab-pane fade" id="roster-flyers" aria-labelledby="roster-flyers-tab">
+                            <img src="images/rosters/2023/Flyers.png" width="100%" />
+                        </div>
+                        <div class="tab-pane fade" id="roster-sens" aria-labelledby="roster-sens-tab">
+                            <img src="images/rosters/2023/Sens.png" width="100%" />
+                        </div>
+                        <div class="tab-pane fade" id="roster-leafs" aria-labelledby="roster-leafs-tab">
+                            <img src="images/rosters/2023/Leafs.png" width="100%" />
+                        </div>
+                        <div class="tab-pane fade" id="roster-bruins" aria-labelledby="roster-bruins-tab">
+                            <img src="images/rosters/2023/Bruins.png" width="100%" />
+                        </div>
+                        <div class="tab-pane fade" id="roster-canadiens" aria-labelledby="roster-canadiens-tab">
+                            <img src="images/rosters/2023/Canadiens.png" width="100%" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- potvin map -->
+            <div id="ngmhl-arena" class="row py-5 justify-content-center">
+                <a class="anchor" id="ngmhl-arena-anchor"></a>
+                <div class="col-8">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.6399825378926!2d-75.59278398406867!3d45.45691047910093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce103a91d7f97f%3A0xeca3dc0530206363!2sRichcraft+Sensplex!5e0!3m2!1sen!2sca!4v1554428032326!5m2!1sen!2sca" width="100%" height="450" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+                </div>
+            </div>
+
+            <!-- footer / end -->
+            <div class="row pt-5 justify-content-center py-5">
+                <div class="col text-center py-5">
+                    <img class="watermark" src="images/ngmhl tri color.png" width="50px"/>
                 </div>
             </div>
         </div>
