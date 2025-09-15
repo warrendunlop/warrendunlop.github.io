@@ -40,7 +40,7 @@
                 <a class="nav-link text-white" aria-current="page" href="#ngmhl-updates-anchor">Updates</a>
             </li>
             <li class="nav-item pt-2 d-none d-lg-block">
-                <a class="nav-link text-white" aria-current="page" href="#ngmhl-arena-anchor">Arena</a>
+                <a class="nav-link text-white" aria-current="page" href="#ngmhl-arena-anchor">Arenas</a>
             </li>
             <!-- <li class="nav-item pt-2 px-4 d-none d-lg-block">
                 <a class="btn orange btn-outline-light rounded-pill" aria-current="page" href="https://form.jotform.com/232267868497273">Register now</a>
@@ -48,23 +48,31 @@
         </ul>
 
         <!-- hero -->
-        <div class="container-fluid mt-5 bg-dark bg-grunge hero">
+        <!-- <div class="container-fluid mt-5 bg-dark bg-grunge hero">
             <div class="row justify-content-center">
                 <div class="col-12 text-center mt-5 py-4">
-                    <!-- <h1 class="oswald orange text-uppercase">Rosters have been set!</h1> -->
+                    <h1 class="oswald orange text-uppercase">Rosters have been set!</h1>
                     <p class="oswald orange text-uppercase">
                         Championship game is this Friday @ 7pm – see you there!
-                        <!-- <span class="oswald" id="days"></span>D
+                        <span class="oswald" id="days"></span>D
                         <span class="oswald" id="hours"></span>H
                         <span class="oswald" id="minutes"></span>M
-                        <span class="oswald" id="seconds"></span>S -->
+                        <span class="oswald" id="seconds"></span>S
                     </p>
-                    <!-- <a class="btn btn-lg btn-outline-warning rounded-pill oswald text-uppercase orange" role="button" href="https://form.jotform.com/232267868497273">Register now</a> -->
+                    <a class="btn btn-lg btn-outline-warning rounded-pill oswald text-uppercase orange" role="button" href="https://form.jotform.com/232267868497273">Register now</a>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="container-fluid">
+            <!-- schedule / calendar -->
+            <div id="ngmhl-schedule" class="row mt-5 py-5 justify-content-center">
+                <a class="anchor" id="ngmhl-schedule-anchor"></a>
+                <div class="col-12 col-xs-12 col-md-12 col-lg-10">
+                    <iframe src="https://embed.styledcalendar.com/#LaIblDe3Sp2obPi5CecJ" title="Styled Calendar" class="styled-calendar-container" style="width: 100%; border: none;" data-cy="calendar-embed-iframe"></iframe>
+                </div>
+            </div>
+
             <!-- roster -->
             <div id="ngmhl-rosters" class="row py-5 justify-content-center">
                 <a class="anchor" id="ngmhl-rosters-anchor"></a>
@@ -72,53 +80,45 @@
                     <p class="fs-1 text-center d-md-none">Roster</p>
                     <ul class="nav nav-underline mb-3 justify-content-center" id="nav-tab" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link whalers active" data-bs-toggle="tab" data-bs-target="#roster-whalers" aria-selected="true" href="#">Whalers</a>
+                            <a class="nav-link bruins active" data-bs-toggle="tab" data-bs-target="#roster-bruins" aria-selected="true" href="#">Bruins</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link canadiens" data-bs-toggle="tab" data-bs-target="#roster-canadiens" aria-selected="false" href="#">Canadiens</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link flyers" data-bs-toggle="tab" data-bs-target="#roster-flyers" aria-selected="false" href="#">Flyers</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link sens" data-bs-toggle="tab" data-bs-target="#roster-sens" aria-selected="false" href="#">Sens</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link leafs" data-bs-toggle="tab" data-bs-target="#roster-leafs" aria-selected="true" href="#">Leafs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link bruins" data-bs-toggle="tab" data-bs-target="#roster-bruins" aria-selected="false" href="#">Bruins</a>
+                            <a class="nav-link sens" data-bs-toggle="tab" data-bs-target="#roster-sens" aria-selected="false" href="#">Sens</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link canadiens" data-bs-toggle="tab" data-bs-target="#roster-canadiens" aria-selected="false" href="#">Canadiens</a>
+                            <a class="nav-link whalers" data-bs-toggle="tab" data-bs-target="#roster-whalers" aria-selected="false" href="#">Whalers</a>
                         </li>
                     </ul>
 
                     <div class="tab-content" id="nav-tabContent">
-                        <div class="tab-pane fade active show" id="roster-whalers" aria-labelledby="roster-whalers-tab">
-                            <img src="images/rosters/2024/Whalers.png" width="100%" />
-                        </div>
-                        <div class="tab-pane fade" id="roster-flyers" aria-labelledby="roster-flyers-tab">
-                            <img src="images/rosters/2024/Flyers.png" width="100%" />
-                        </div>
-                        <div class="tab-pane fade" id="roster-sens" aria-labelledby="roster-sens-tab">
-                            <img src="images/rosters/2024/Sens.png" width="100%" />
-                        </div>
-                        <div class="tab-pane fade" id="roster-leafs" aria-labelledby="roster-leafs-tab">
-                            <img src="images/rosters/2024/Leafs.png" width="100%" />
-                        </div>
-                        <div class="tab-pane fade" id="roster-bruins" aria-labelledby="roster-bruins-tab">
-                            <img src="images/rosters/2024/Bruins.png" width="100%" />
+                        <div class="tab-pane fade  active show" id="roster-bruins" aria-labelledby="roster-bruins-tab">
+                            <img src="images/rosters/2025/Bruins.png" width="100%" />
                         </div>
                         <div class="tab-pane fade" id="roster-canadiens" aria-labelledby="roster-canadiens-tab">
-                            <img src="images/rosters/2024/Canadiens.png" width="100%" />
+                            <img src="images/rosters/2025/Canadiens.png" width="100%" />
+                        </div>
+                        <div class="tab-pane fade" id="roster-flyers" aria-labelledby="roster-flyers-tab">
+                            <img src="images/rosters/2025/Flyers.png" width="100%" />
+                        </div>
+                        <div class="tab-pane fade" id="roster-leafs" aria-labelledby="roster-leafs-tab">
+                            <img src="images/rosters/2025/Leafs.png" width="100%" />
+                        </div>
+                        <div class="tab-pane fade" id="roster-sens" aria-labelledby="roster-sens-tab">
+                            <img src="images/rosters/2025/Sens.png" width="100%" />
+                        </div>
+                        <div class="tab-pane fade" id="roster-whalers" aria-labelledby="roster-whalers-tab">
+                            <img src="images/rosters/2025/Whalers.png" width="100%" />
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <!-- schedule / calendar -->
-            <div id="ngmhl-schedule" class="row py-5 justify-content-center">
-                <a class="anchor" id="ngmhl-schedule-anchor"></a>
-                <div class="col-12 col-xs-12 col-md-12 col-lg-10">
-                    <iframe src="https://embed.styledcalendar.com/#LaIblDe3Sp2obPi5CecJ" title="Styled Calendar" class="styled-calendar-container" style="width: 100%; border: none;" data-cy="calendar-embed-iframe"></iframe>
                 </div>
             </div>
 
@@ -135,8 +135,8 @@
                 <div class="col-12 col-sm-6 col-lg-4 py-3 text-center">
                     <p><i class="fa-solid fa-calendar-days fs-1"></i></p>
                     <p>
-                        <span class="fs-5 oswald text-uppercase">Same rink, nights, and times</span><br/>
-                        <span class="text-secondary">Tue 9/10, Thurs 10/11, Sun 9/10 @ Potvin</span>
+                        <span class="fs-5 oswald text-uppercase">Same rink(s), nights, and times</span><br/>
+                        <span class="text-secondary">Tue 9/10, Thurs 10/11, Sun 9/10 @ BGM</span>
                     </p>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4 py-3 text-center">
@@ -190,6 +190,7 @@
                 <div class="col-12 col-md-10 col-xl-9">
                     <p class="fs-1 text-center d-md-none">Arena</p>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.6399825378926!2d-75.59278398406867!3d45.45691047910093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce103a91d7f97f%3A0xeca3dc0530206363!2sRichcraft+Sensplex!5e0!3m2!1sen!2sca!4v1554428032326!5m2!1sen!2sca" width="100%" height="450" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.839796675128!2d-75.65807372372775!3d45.43273067107341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0568d45a240f%3A0xcf83e5f11a3d4d5a!2sBernard%20Grandma%C3%AEtre%20Respite%20Centre!5e0!3m2!1sen!2sca!4v1757968855722!5m2!1sen!2sca" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
 
