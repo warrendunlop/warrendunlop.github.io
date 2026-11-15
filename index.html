@@ -1,213 +1,91 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>NGMHL - Beer League Beauts Since '71</title>
-        <meta name="description" content="North Gloucester Mens Hockey League - playing in Potvin Arena in the Richcraft Sensplex since 1971.">
-        <meta name="keywords" content="Hockey, Ottawa, North Gloucester">
-        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-        <link rel="manifest" href="site.webmanifest">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-        <link href="ngmhl.css" rel="stylesheet"/>
-        <script src="countdown.js"></script>
-        <script src="https://kit.fontawesome.com/e525574102.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-        <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
-    </head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NGMHL - Beer League Beauts Since '71</title>
+    <meta name="description" content="North Gloucester Men's Hockey League — Ottawa's friendliest rec league, playing at the Richcraft Sensplex since 1971. Schedule, results, standings and rosters.">
+    <meta name="keywords" content="Hockey, Ottawa, North Gloucester, NGMHL">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script>try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.classList.add(t)}catch(e){}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,600;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/site.css">
+    <link rel="preload" as="image" href="/assets/hero/ngmhl-01.jpg">
+    <script src="/assets/site.js" defer></script>
+  </head>
 
-    <body class="bg-body-tertiary">
-        <!-- nav -->
-        <ul class="nav fixed-top justify-content-center py-1 bg-black">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"><img src="images/ngmhl tri color.png" width="40" alt="NGMHL"></a>
-            </li>
-            <!-- <li class="nav-item pt-2 d-none d-md-block">
-                <a class="nav-link text-white" aria-current="page" href="#ngmhl-about-anchor">About</a>
-            </li> -->
-            <li class="nav-item pt-2 d-none d-lg-block">
-                <a class="nav-link text-white" aria-current="page" href="#ngmhl-rosters-anchor">Rosters</a>
-            </li>
-            <li class="nav-item pt-2 d-none d-md-block">
-                <a class="nav-link text-white" aria-current="page" href="#ngmhl-schedule-anchor">Schedule</a>
-            </li>
-            <li class="nav-item pt-2 d-none d-md-block">
-                <a class="nav-link text-white" aria-current="page" href="#ngmhl-updates-anchor">Updates</a>
-            </li>
-            <li class="nav-item pt-2 d-none d-lg-block">
-                <a class="nav-link text-white" aria-current="page" href="#ngmhl-arena-anchor">Arena</a>
-            </li>
-            <!-- <li class="nav-item pt-2 px-4 d-none d-lg-block">
-                <a class="btn orange btn-outline-light rounded-pill" aria-current="page" href="https://form.jotform.com/232267868497273">Register now</a>
-            </li> -->
-        </ul>
+  <body data-page="home">
+    <div id="rail" class="rail"></div>
+    <header id="site-header" class="site-header over-hero"></header>
 
-        <!-- hero -->
-        <!-- <div class="container-fluid mt-5 bg-dark bg-grunge hero">
-            <div class="row justify-content-center">
-                <div class="col-12 text-center mt-5 py-4">
-                    <h1 class="oswald orange text-uppercase">Rosters have been set!</h1>
-                    <p class="oswald orange text-uppercase">
-                        Championship game is this Friday @ 7pm – see you there!
-                        <span class="oswald" id="days"></span>D
-                        <span class="oswald" id="hours"></span>H
-                        <span class="oswald" id="minutes"></span>M
-                        <span class="oswald" id="seconds"></span>S
-                    </p>
-                    <a class="btn btn-lg btn-outline-warning rounded-pill oswald text-uppercase orange" role="button" href="https://form.jotform.com/232267868497273">Register now</a>
-                </div>
-            </div>
-        </div> -->
-
-        <div class="container-fluid">
-            <!-- schedule / calendar -->
-            <div id="ngmhl-schedule" class="row mt-5 py-5 justify-content-center">
-                <a class="anchor" id="ngmhl-schedule-anchor"></a>
-                <div class="col-12 col-xs-12 col-md-12 col-lg-10">
-                    <iframe src="https://embed.styledcalendar.com/#LaIblDe3Sp2obPi5CecJ" title="Styled Calendar" class="styled-calendar-container" style="width: 100%; border: none;" data-cy="calendar-embed-iframe"></iframe>
-                </div>
-            </div>
-
-            <!-- roster -->
-            <div id="ngmhl-rosters" class="row py-5 justify-content-center">
-                <a class="anchor" id="ngmhl-rosters-anchor"></a>
-                <div class="col-12 col-md-10 col-xl-9">
-                    <p class="fs-1 text-center d-md-none">Roster</p>
-                    <ul class="nav nav-underline mb-3 justify-content-center" id="nav-tab" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link bruins active" data-bs-toggle="tab" data-bs-target="#roster-bruins" aria-selected="true" href="#">Bruins</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link canadiens" data-bs-toggle="tab" data-bs-target="#roster-canadiens" aria-selected="false" href="#">Canadiens</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link flyers" data-bs-toggle="tab" data-bs-target="#roster-flyers" aria-selected="false" href="#">Flyers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link leafs" data-bs-toggle="tab" data-bs-target="#roster-leafs" aria-selected="true" href="#">Leafs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link sens" data-bs-toggle="tab" data-bs-target="#roster-sens" aria-selected="false" href="#">Sens</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link whalers" data-bs-toggle="tab" data-bs-target="#roster-whalers" aria-selected="false" href="#">Whalers</a>
-                        </li>
-                    </ul>
-
-                    <div class="tab-content" id="nav-tabContent">
-                        <div class="tab-pane fade  active show" id="roster-bruins" aria-labelledby="roster-bruins-tab">
-                            <img src="images/rosters/2025/Bruins.png" width="100%" />
-                        </div>
-                        <div class="tab-pane fade" id="roster-canadiens" aria-labelledby="roster-canadiens-tab">
-                            <img src="images/rosters/2025/Canadiens.png" width="100%" />
-                        </div>
-                        <div class="tab-pane fade" id="roster-flyers" aria-labelledby="roster-flyers-tab">
-                            <img src="images/rosters/2025/Flyers.png" width="100%" />
-                        </div>
-                        <div class="tab-pane fade" id="roster-leafs" aria-labelledby="roster-leafs-tab">
-                            <img src="images/rosters/2025/Leafs.png" width="100%" />
-                        </div>
-                        <div class="tab-pane fade" id="roster-sens" aria-labelledby="roster-sens-tab">
-                            <img src="images/rosters/2025/Sens.png" width="100%" />
-                        </div>
-                        <div class="tab-pane fade" id="roster-whalers" aria-labelledby="roster-whalers-tab">
-                            <img src="images/rosters/2025/Whalers.png" width="100%" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- about -->
-            <div id="ngmhl-about" class="row py-5 justify-content-center">
-                <a class="anchor" id="ngmhl-about-anchor"></a>
-                <div class="col-12 col-sm-6 col-lg-4 py-3 text-center">
-                    <p><i class="fa-solid fa-meteor fs-1"></i></p>
-                    <p>
-                        <span class="fs-5 oswald text-uppercase">Play nearly 50 games</span><br/>
-                        <span class="text-secondary">Five games every two weeks</span>
-                    </p>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 py-3 text-center">
-                    <p><i class="fa-solid fa-calendar-days fs-1"></i></p>
-                    <p>
-                        <span class="fs-5 oswald text-uppercase">Same rink, nights, and times</span><br/>
-                        <span class="text-secondary">Tue 9/10, Thurs 10/11, Sun 9/10 @ Potvin</span>
-                    </p>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 py-3 text-center">
-                    <p><i class="fa-solid fa-handshake-simple fs-1"></i></p>
-                    <p>
-                        <span class="fs-5 oswald text-uppercase">Good vibes only</span><br/>
-                        <span class="text-secondary">High retention + draft = no dickheads</span>
-                    </p>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 py-3 text-center">
-                    <p><i class="fa-solid fa-scale-balanced fs-1"></i></p>
-                    <p>
-                        <span class="fs-5 oswald text-uppercase">Even playing field</span><br/>
-                        <span class="text-secondary">Every year we divide 6 fair teams</span>
-                    </p>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 py-3 text-center">
-                    <p><i class="fa-solid fa-beer-mug-empty fs-1"></i></p>
-                    <p>
-                        <span class="fs-5 oswald text-uppercase">Best league culture in Ottawa</span><br/>
-                        <span class="text-secondary">Re-shuffling means you'll know everyone</span>
-                    </p>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 py-3 text-center">
-                    <p><i class="fa-solid fa-shirt fs-1"></i></p>
-                    <p>
-                        <span class="fs-5 oswald text-uppercase">Nice threads, of course</span><br/>
-                        <span class="text-secondary">High quality jerseys and socks provided</span>
-                    </p>
-                </div>
-            </div>
-
-            <!-- updates / social media -->
-            <div id="ngmhl-updates" class="row py-5 justify-content-center">
-                <a class="anchor" id="ngmhl-updates-anchor"></a>
-                <p class="fs-1 text-center d-md-none">Udpates</p>
-                <div class="col col-lg-12">
-                    <div class="d-xs-block d-sm-block d-md-none">
-                        <div class="d-flex pt-5">
-                            <div class="p-2 flex-grow-1"><h4><i class="fa-brands fa-instagram"></i> NGMHL71</h4></div>
-                            <div class="p-2"><a class="btn btn-dark rounded-pill" role="button" href="twitter.com/ngmhl71">Follow</a></div>
-                        </div>
-                    </div>
-                    <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
-                </div>
-            </div>
-
-            <!-- potvin map -->
-            <div id="ngmhl-arena" class="row py-5 justify-content-center">
-                <a class="anchor" id="ngmhl-arena-anchor"></a>
-                <div class="col-12 col-md-10 col-xl-9">
-                    <p class="fs-1 text-center d-md-none">Arena</p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.6399825378926!2d-75.59278398406867!3d45.45691047910093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce103a91d7f97f%3A0xeca3dc0530206363!2sRichcraft+Sensplex!5e0!3m2!1sen!2sca!4v1554428032326!5m2!1sen!2sca" width="100%" height="450" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
-                </div>
-            </div>
-
-            <!-- footer / end -->
-            <div class="row pt-5 justify-content-center py-5">
-                <div class="col text-center py-5">
-                    <img class="watermark" src="images/ngmhl tri color.png" width="50px"/>
-                </div>
-            </div>
+    <main id="app">
+      <section id="hero" class="hero">
+        <img class="hero-photo is-current pan-a" src="/assets/hero/ngmhl-01.jpg" alt="">
+        <div class="hero-scrim"></div>
+        <div class="hero-copy">
+          <p class="hero-eyebrow enter">Beer League Beauts Since 1971</p>
+          <h1 class="enter" style="animation-delay:120ms">North Gloucester Men's Hockey League</h1>
+          <p class="hero-sub enter" style="animation-delay:240ms">Ottawa's friendliest rec league.</p>
+          <div class="enter" style="animation-delay:360ms">
+            <a class="button" href="/schedule/">See the schedule</a>
+          </div>
         </div>
+      </section>
 
-        <script type="text/javascript">
-            /* curator-feed-default-feed-layout */
-            (function(){
-            var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
-            i.src="https://cdn.curator.io/published/521ebeb5-63df-4432-bd95-0db434fe33c5.js";
-            e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
-            })();
-        </script>
-    </body>
+      <section class="band">
+        <div class="features">
+          <div class="feature">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14.66V17a1 1 0 0 1-1 1 2 2 0 0 0-2 2v2"/><path d="M14 14.66V17a1 1 0 0 0 1 1 2 2 0 0 1 2 2v2"/><path d="M17.916 10H19.5A2.5 2.5 0 0 0 22 7.5V5a1 1 0 0 0-1-1h-3"/><path d="M4 22h16"/><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"/><path d="M6.084 10H4.5A2.5 2.5 0 0 1 2 7.5V5a1 1 0 0 1 1-1h3"/></svg>
+            <p class="feature-title">Over 45 games a season</p>
+            <p class="feature-sub">Regular season plus playoffs, usually twice a week</p>
+          </div>
+          <div class="feature">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 2v3"/><path d="M16 2v3"/><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
+            <p class="feature-title">One rink, the same nights</p>
+            <p class="feature-sub">Every game at the Richcraft Sensplex on a Tue-Thur-Sun cycle.</p>
+          </div>
+          <div class="feature">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 10V9"/><path d="M16.472 15a6 6 0 01-8.943 0"/><path d="M9 10V9"/><circle cx="12" cy="12" r="10"/></svg>
+            <p class="feature-title">Good vibes only</p>
+            <p class="feature-sub">A high retention rate and a fair draft means good teammates</p>
+          </div>
+          <div class="feature">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18"/><path d="m19 8 3 8a5 5 0 0 1-6 0zV7"/><path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1"/><path d="m5 8 3 8a5 5 0 0 1-6 0zV7"/><path d="M7 21h10"/></svg>
+            <p class="feature-title">Even playing field</p>
+            <p class="feature-sub">Balanced teams drafted fresh each season; trade night refines.</p>
+          </div>
+          <div class="feature">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>
+            <p class="feature-title">Get to know everyone</p>
+            <p class="feature-sub">Re-shuffling every season, not the same locker room for years</p>
+          </div>
+          <div class="feature">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>
+            <p class="feature-title">Jerseys and socks provided</p>
+            <p class="feature-sub">Just show up with your gear, a stick, and maybe a thirst.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- This season's table, drawn by assets/site.js once there's a result to count. -->
+      <div id="home-standings"></div>
+
+      <section style="padding:2.5rem 1rem">
+        <div class="note-card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+          <div>
+            <h2>Joining the league</h2>
+            <p>The NGMHL fills by invitation, and spots open when someone moves on. Ask a player you know to put your name forward with the executives.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="site-footer" class="site-footer"></footer>
+  </body>
 </html>

@@ -1,0 +1,58 @@
+# Keeps data/benchapp.json in step with BenchApp, which is where the site's schedule, scores,
+# standings and rosters come from. See scripts/sync-benchapp.mjs for why it's a copy.
+#
+# Runs hourly, every 15 minutes while games are on, and on demand from the Actions tab
+# ("Run workflow"). It only commits when BenchApp's data actually changed.
+name: Sync BenchApp
+
+on:
+  schedule:
+    - cron: '20 * * * *'
+    # Game nights are Sun/Tue/Thu, 9pm to midnight Ottawa time: 01:00-05:59 UTC the next day.
+    - cron: '*/15 1-5 * * 1,3,5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: benchapp-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Pull from BenchApp
+        run: node scripts/sync-benchapp.mjs
+
+      - name: Commit if anything changed
+        id: commit
+        run: |
+          if git diff --quiet -- data/; then
+            echo "BenchApp data unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git commit -m "Sync BenchApp data"
+          git push
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+
+      # A push made with the Action's own token doesn't always start a Pages build, so ask for
+      # one. Harmless if one is already running.
+      - name: Rebuild the site
+        if: steps.commit.outputs.pushed == 'true'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds"
