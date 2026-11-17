@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T07:29:11.270Z",
+  "updated": "2026-11-17T22:29:56.367Z",
   "league": {"name":"NGMHL","timezone":"America/Toronto"},
   "currentSeason": "2026-27",
   "seasons": [
@@ -356,6 +356,7 @@
           "players": [
             {"name":"chris Glover","position":"F"},
             {"name":"Dave Saville","position":"F"},
+            {"name":"Eamonn Lahey","position":"F"},
             {"name":"Hugh Cruttenden","position":"G"},
             {"name":"Jon Ivany","position":"D"},
             {"name":"Llew Ncwana","position":"F","leadership":"assistant"},
