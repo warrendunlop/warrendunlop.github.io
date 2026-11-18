@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T04:34:19.308Z",
+  "updated": "2026-11-18T08:05:34.872Z",
   "league": {"name":"NGMHL","timezone":"America/Toronto"},
   "currentSeason": "2026-27",
   "seasons": [
@@ -60,7 +60,7 @@
         {"id":3637118,"date":"2026-11-12","time":"23:00","away":"Bruins","home":"Leafs","awayScore":6,"homeScore":5,"location":"Potvin Arena"},
         {"id":3637119,"date":"2026-11-15","time":"21:00","away":"Canadiens","home":"Bruins","awayScore":1,"homeScore":1,"location":"Potvin Arena"},
         {"id":3637120,"date":"2026-11-15","time":"22:00","away":"Whalers","home":"Senators","awayScore":5,"homeScore":3,"location":"Potvin Arena"},
-        {"id":3637121,"date":"2026-11-17","time":"21:00","away":"Whalers","home":"Leafs","awayScore":0,"homeScore":0,"location":"Potvin Arena"},
+        {"id":3637121,"date":"2026-11-17","time":"21:00","away":"Whalers","home":"Leafs","awayScore":5,"homeScore":4,"location":"Potvin Arena"},
         {"id":3637122,"date":"2026-11-17","time":"22:00","away":"Flyers","home":"Canadiens","awayScore":4,"homeScore":5,"location":"Potvin Arena"},
         {"id":3637123,"date":"2026-11-19","time":"22:00","away":"Whalers","home":"Bruins","awayScore":0,"homeScore":0,"location":"Potvin Arena"},
         {"id":3637124,"date":"2026-11-19","time":"23:00","away":"Canadiens","home":"Flyers","awayScore":0,"homeScore":0,"location":"Potvin Arena"},
