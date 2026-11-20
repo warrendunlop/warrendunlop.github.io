@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T08:05:34.872Z",
+  "updated": "2026-11-20T03:35:00.771Z",
   "league": {"name":"NGMHL","timezone":"America/Toronto"},
   "currentSeason": "2026-27",
   "seasons": [
@@ -348,7 +348,8 @@
             {"name":"Pascal Marion","position":null},
             {"name":"Patrick Gautier","position":"F"},
             {"name":"Robert Mackay","position":"D"},
-            {"name":"Steph Thibert","position":"F","leadership":"captain"}
+            {"name":"Steph Thibert","position":"F","leadership":"captain"},
+            {"name":"Stephan St Martin","position":null}
           ]
         },
         {
@@ -397,9 +398,10 @@
             {"name":"Angus Gray","position":"F"},
             {"name":"Brad Killeen","position":"F"},
             {"name":"Denis Lalonde","position":"D"},
-            {"name":"Frank Maiorino","position":"F"},
+            {"name":"Frank Maiorino","position":"D"},
             {"name":"Fred Bachelier","position":"G"},
             {"name":"Ian Bingeman","position":"F","leadership":"assistant"},
+            {"name":"IL","position":null},
             {"name":"Jim Tsiokos","position":"D"},
             {"name":"Kris Meawasige","position":"F"},
             {"name":"Mark Yusak","position":"D"},
