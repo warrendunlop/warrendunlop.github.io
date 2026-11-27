@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25T08:52:01.402Z",
+  "updated": "2026-11-27T05:09:58.879Z",
   "league": {"name":"NGMHL","timezone":"America/Toronto"},
   "currentSeason": "2026-27",
   "seasons": [
@@ -68,7 +68,7 @@
         {"id":3637126,"date":"2026-11-22","time":"22:00","away":"Whalers","home":"Canadiens","awayScore":5,"homeScore":5,"location":"Potvin Arena"},
         {"id":3637127,"date":"2026-11-24","time":"21:00","away":"Senators","home":"Flyers","awayScore":8,"homeScore":4,"location":"Potvin Arena"},
         {"id":3637128,"date":"2026-11-24","time":"22:00","away":"Leafs","home":"Bruins","awayScore":3,"homeScore":7,"location":"Potvin Arena"},
-        {"id":3637129,"date":"2026-11-26","time":"22:00","away":"Senators","home":"Canadiens","awayScore":0,"homeScore":0,"location":"Potvin Arena"},
+        {"id":3637129,"date":"2026-11-26","time":"22:00","away":"Senators","home":"Canadiens","awayScore":4,"homeScore":3,"location":"Potvin Arena"},
         {"id":3637130,"date":"2026-11-26","time":"23:00","away":"Leafs","home":"Whalers","awayScore":0,"homeScore":0,"location":"Potvin Arena"},
         {"id":3637131,"date":"2026-11-29","time":"21:00","away":"Flyers","home":"Bruins","awayScore":0,"homeScore":0,"location":"Potvin Arena"},
         {"id":3637132,"date":"2026-11-29","time":"22:00","away":"Leafs","home":"Canadiens","awayScore":0,"homeScore":0,"location":"Potvin Arena"},
@@ -346,7 +346,6 @@
             {"name":"Jon Keyes","position":"F","leadership":"assistant"},
             {"name":"Marc-Andre Brouzes","position":null},
             {"name":"Pascal Marion","position":null},
-            {"name":"Patrick Gautier","position":"F"},
             {"name":"Robert Mackay","position":"D"},
             {"name":"Steph Thibert","position":"F","leadership":"captain"},
             {"name":"Stephan St Martin","position":null}
